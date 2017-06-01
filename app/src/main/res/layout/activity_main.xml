@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="id.ac.amikom.a0988students.badarudin.saveimage.MainActivity">
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="46dp"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/edtPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/price"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/edtName"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:contentDescription=""
+        tools:ignore="ContentDescription"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnChoose"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_image"
+        android:textSize="12sp"
+        android:layout_below="@+id/imageView"
+        android:background="@color/colorTextHint"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:text="save"
+        tools:ignore="HardcodedText"
+        android:layout_alignBaseline="@+id/btnList"
+        android:layout_alignBottom="@+id/btnList"
+        android:background="@color/colorTextHint"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnList"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:text="@string/food_list"
+        android:layout_below="@+id/edtPrice"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorTextHint"
+        android:layout_marginTop="26dp" />
+
+</RelativeLayout>
